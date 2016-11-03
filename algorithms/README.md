@@ -31,4 +31,6 @@ space complexity
   - space used at any time is the total space used by all recursive calls active at that time
 
 source(s)
+  - [The Y Combinator (Slight Return)](http://mvanier.livejournal.com/2897.html)
+    - Inspired [this piece on fibonnaci recursions without names](http://blog.klipse.tech/lambda/2016/08/10/almost-y-combinator-javascript.html)
   - [Design and Analysis of Algorithms Lecture notes for January 9, 1996](https://www.ics.uci.edu/~eppstein/161/960109.html)
