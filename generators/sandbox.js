@@ -1,15 +1,15 @@
-const assert = require('assert') // <= required by node for import to use `assert`
+const assert = require('assert')
 
-function* demo() {
-  var res = yield 10
-  assert(res === 32)
-  return 42
+var sentinel = new Error('foo')
+
+function *demo() {
+  try {
+    yield 10
+  } catch (ex) {
+    assert(ex === sentinel)
+  }
 }
 
-d = demo()
-
-var resA = d.next()
-var resB = d.next(32)
-
-console.log(resA)
-console.log(resB)
+var d = demo()
+console.log(d.next())
+console.log(d.throw(sentinel)) // `throw` throws error from generator
