@@ -1,15 +1,15 @@
-function *foo() {
-  yield 1;
-  yield 2;
-  yield 3;
-  yield 4;
-  yield 5;
+const assert = require('assert') // <= required by node for import to use `assert`
+
+function* demo() {
+  var res = yield 10
+  assert(res === 32)
+  return 42
 }
 
-bar = foo()
-steps = 5
+d = demo()
 
-for(i = 0; i <= steps; i++) {
-  next = bar.next()
-  console.log(next)
-}
+var resA = d.next()
+var resB = d.next(32)
+
+console.log(resA)
+console.log(resB)
