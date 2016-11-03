@@ -20,4 +20,6 @@ F(4) = 3 -- in the third year, they have another pair
 F(5) = 5 -- we get the first set of grandchildren
 In general F(n) = F(n-1) + F(n-2): all the previous rabbits are still there (F(n-1)) plus we get one pair of children for every pair of rabbits we had two years ago (F(n-2)).
 
-[source](https://www.ics.uci.edu/~eppstein/161/960109.html)
+[source(s)]
+  - [Eppstein Algorithms](https://www.ics.uci.edu/~eppstein/161/960109.html)
+  - [Y Combinator Recursive Memoization with the Fibonacci Sequence](http://blog.klipse.tech/lambda/2016/08/10/y-combinator-app-javascript.html)
